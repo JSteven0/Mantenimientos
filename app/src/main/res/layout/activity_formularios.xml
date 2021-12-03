@@ -1,0 +1,170 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_margin="15dp"
+        android:orientation="vertical"
+        tools:context=".FormulariosActivity">
+
+        <EditText
+            android:id="@+id/ET_nombre"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:ems="10"
+            android:hint="Nombre"
+            android:inputType="textCapSentences" />
+
+        <EditText
+            android:id="@+id/ET_apellidos"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:ems="10"
+            android:hint="Apellidos"
+            android:inputType="textCapSentences" />
+
+        <EditText
+            android:id="@+id/ET_codigo"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="15dp"
+            android:ems="10"
+            android:hint="Código"
+            android:inputType="textCapSentences" />
+
+        <EditText
+            android:id="@+id/ET_estado"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:ems="10"
+            android:hint="Estado"
+            android:inputType="textPersonName" />
+
+        <TextView
+            android:id="@+id/textView"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="15dp"
+            android:text="Tipo de equipo:" />
+
+        <Spinner
+            android:id="@+id/SP_equipo"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:entries="@array/lista_tipo_equipo" />
+
+        <TableRow
+            android:layout_width="match_parent"
+            android:layout_height="match_parent" />
+
+        <EditText
+            android:id="@+id/ET_marca"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:ems="10"
+            android:hint="Marca"
+            android:inputType="textCapSentences" />
+
+        <EditText
+            android:id="@+id/ET_serial"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:ems="10"
+            android:hint="Serial"
+            android:inputType="textCapSentences" />
+
+        <EditText
+            android:id="@+id/hardware"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:ems="10"
+            android:inputType="textPersonName"
+            android:text="Problema de Hardware" />
+
+        <Spinner
+            android:id="@+id/SP_hardware"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:entries="@array/lista_sino" />
+
+        <TextView
+            android:id="@+id/software"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="problema de software"
+            android:textSize="18sp" />
+
+        <Spinner
+            android:id="@+id/SP_software"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:entries="@array/lista_sino" />
+
+        <EditText
+            android:id="@+id/ET_especificacion"
+            android:layout_width="match_parent"
+            android:layout_height="120dp"
+            android:ems="10"
+            android:gravity="start|top"
+            android:hint="Especificación"
+            android:inputType="textMultiLine" />
+
+        <TextView
+            android:id="@+id/Solucion"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Se solucionó el problema" />
+
+        <Spinner
+            android:id="@+id/SP_solucion"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:entries="@array/lista_sino" />
+
+        <TableRow
+            android:layout_width="match_parent"
+            android:layout_height="280dp"
+            android:layout_marginTop="20dp">
+
+            <ImageButton
+                android:id="@+id/BT_camara"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:onClick="abrirCamara"
+                app:srcCompat="@android:drawable/ic_menu_camera" />
+
+            <ImageView
+                android:id="@+id/IV_equipo"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_marginLeft="15dp" />
+
+        </TableRow>
+
+        <TableRow
+            android:layout_width="match_parent"
+            android:layout_height="match_parent" >
+
+            <Button
+                android:id="@+id/BT_guardarFormulario"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="20dp"
+                android:layout_marginRight="40dp"
+                android:text="Guardar" />
+
+            <Button
+                android:id="@+id/BT_buscarFormulario"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Búscar" />
+        </TableRow>
+
+    </LinearLayout>
+</ScrollView>
