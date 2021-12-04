@@ -149,7 +149,8 @@
 
         <TableRow
             android:layout_width="match_parent"
-            android:layout_height="match_parent" >
+            android:layout_height="match_parent"
+            android:gravity="center_horizontal">
 
             <Button
                 android:id="@+id/BT_guardarFormulario"
@@ -157,13 +158,36 @@
                 android:layout_height="wrap_content"
                 android:layout_marginTop="20dp"
                 android:layout_marginRight="40dp"
+                android:onClick="RellenarFormulario"
                 android:text="Guardar" />
 
             <Button
                 android:id="@+id/BT_buscarFormulario"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
+                android:onClick="BuscarFormulario"
                 android:text="Búscar" />
+
+        </TableRow>
+
+        <TableRow
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="center_horizontal">
+
+            <Button
+                android:id="@+id/BT_editarFormulario"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:onClick="EditarFormulario"
+                android:text="Editar" />
+
+            <Button
+                android:id="@+id/BT_eliminarFormulario"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:onClick="EliminarFormulario"
+                android:text="Eliminar" />
         </TableRow>
 
     </LinearLayout>

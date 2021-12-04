@@ -20,10 +20,12 @@
             android:exported="false" />
         <activity
             android:name=".FormulariosActivity"
+            android:label="@string/formularios"
             android:exported="false" />
         <activity
             android:name=".PerfilActivity"
-            android:exported="false" />
+            android:exported="false"
+            android:label="@string/perfiles"/>
         <activity
             android:name=".SplashScreen"
             android:exported="true">

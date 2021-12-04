@@ -67,18 +67,42 @@
     <TableRow
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:layout_marginTop="23dp">
+        android:layout_marginTop="80dp"
+        android:gravity="center_horizontal">
 
         <Button
             android:id="@+id/BT_guardarp"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
+            android:onClick="guardarPerfil"
             android:text="Guardar" />
 
         <Button
             android:id="@+id/BT_buscarp"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
+            android:onClick="BuscarPerfil"
             android:text="Búscar" />
+
+    </TableRow>
+
+    <TableRow
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center_horizontal">
+
+        <Button
+            android:id="@+id/BT_editarp"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:onClick="EditarPerfil"
+            android:text="Editar" />
+
+        <Button
+            android:id="@+id/BT_eliminarp"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:onClick="EliminarPerfil"
+            android:text="Eliminar" />
     </TableRow>
 </LinearLayout>

@@ -11,7 +11,7 @@ import java.util.Timer;
 import java.util.TimerTask;
 
 public class SplashScreen extends AppCompatActivity {
-    public static final long SPLASH_SCREEN_DALEY = 3000;
+    public static final long SPLASH_SCREEN_DALEY = 2000;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
