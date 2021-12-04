@@ -53,8 +53,9 @@
             app:cornerRadius="10dp" />
 
         <Button
-            android:id="@+id/button16"
+            android:id="@+id/buttonSalirApp"
             style="@style/boton_menu_claro"
+            android:onClick="salir"
             android:text="@string/menu_option4"
             app:cornerRadius="10dp" />
     </TableRow>

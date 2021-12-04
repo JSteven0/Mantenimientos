@@ -10,6 +10,9 @@
         android:supportsRtl="true"
         android:theme="@style/Theme.Mantenimientos">
         <activity
+            android:name=".RegisterActivity"
+            android:exported="false" />
+        <activity
             android:name=".Login"
             android:exported="false" />
         <activity
@@ -20,12 +23,12 @@
             android:exported="false" />
         <activity
             android:name=".FormulariosActivity"
-            android:label="@string/formularios"
-            android:exported="false" />
+            android:exported="false"
+            android:label="@string/formularios" />
         <activity
             android:name=".PerfilActivity"
             android:exported="false"
-            android:label="@string/perfiles"/>
+            android:label="@string/perfiles" />
         <activity
             android:name=".SplashScreen"
             android:exported="true">

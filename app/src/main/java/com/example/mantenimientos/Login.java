@@ -39,12 +39,13 @@ public class Login extends AppCompatActivity {
         
         mAuth = FirebaseAuth.getInstance();
 
-        buttonIngresar.setOnClickListener(view -> {
-            iniciarSesion();
+        txtRegistrarse.setOnClickListener(view -> {
+            Intent newIntent = new Intent(getApplicationContext(), RegisterActivity.class);
+            startActivity(newIntent);
         });
     }
 
-    public void iniciarSesion(){
+    public void iniciarSesion(View view){
         String mail = txtMail.getText().toString();
         String password = txtPassword.getText().toString();
 

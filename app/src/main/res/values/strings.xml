@@ -4,7 +4,7 @@
     <string name="menu_option1">formularios</string>
     <string name="menu_option2">estado de formularios</string>
     <string name="menu_option3">perfil</string>
-    <string name="menu_option4">mensaje de texto</string>
+    <string name="menu_option4">Salir</string>
     <string name="formularios">Formulario</string>
     <string name="perfiles">Perfil</string>
 </resources>

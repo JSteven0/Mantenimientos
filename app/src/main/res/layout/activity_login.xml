@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="utf-8"?>
-<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="wrap_content"
@@ -12,10 +12,7 @@
         android:backgroundTint="@color/azul_oscuro"
         android:orientation="vertical"
         android:paddingLeft="15dp"
-        android:paddingEnd="15dp"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintStart_toStartOf="parent"
-        tools:layout_editor_absoluteY="-2dp">
+        android:paddingEnd="15dp">
 
         <TextView
             android:id="@+id/textView"
@@ -46,7 +43,8 @@
             android:drawableRight="@drawable/ic_login_user"
             android:ems="10"
             android:hint="Ingrese su usuario"
-            android:inputType="textEmailAddress" />
+            android:inputType="textEmailAddress"
+            android:minHeight="48dp" />
 
         <TextView
             android:id="@+id/textView3"
@@ -64,7 +62,8 @@
             android:drawableRight="@drawable/ic_login_password"
             android:ems="10"
             android:hint="Ingrese su contraseña"
-            android:inputType="textPassword" />
+            android:inputType="textPassword"
+            android:minHeight="48dp" />
 
         <Button
             android:id="@+id/buttonIngresar"
@@ -94,7 +93,8 @@
                 android:layout_height="wrap_content"
                 android:text="¿Olvidó su contraseña?"
                 android:textAlignment="textEnd"
-                android:textColor="@color/azul_oscuro" />
+                android:textColor="@color/azul_oscuro"
+                tools:visibility="gone" />
 
         </LinearLayout>
 
@@ -107,7 +107,9 @@
             android:layout_weight="0"
             android:drawableBottom="?android:attr/fingerprintAuthDrawable"
             android:drawableTint="@color/white"
-            app:cornerRadius="1000dp" />
+            app:cornerRadius="1000dp"
+            tools:ignore="SpeakableTextPresentCheck"
+            tools:visibility="gone" />
 
         <ImageButton
             android:id="@+id/imageButton"
@@ -128,6 +130,7 @@
             android:layout_height="wrap_content"
             android:layout_gravity="center"
             android:layout_marginTop="5dp"
-            android:text="One-Touch Login" />
+            android:text="One-Touch Login"
+            tools:visibility="gone" />
     </LinearLayout>
-</androidx.constraintlayout.widget.ConstraintLayout>
+</LinearLayout>

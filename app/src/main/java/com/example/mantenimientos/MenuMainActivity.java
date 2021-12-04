@@ -5,6 +5,7 @@ import androidx.appcompat.app.AppCompatActivity;
 import android.content.Intent;
 import android.os.Bundle;
 import android.view.View;
+import android.widget.Button;
 
 import com.google.firebase.auth.FirebaseAuth;
 import com.google.firebase.auth.FirebaseUser;
@@ -54,5 +55,10 @@ public class MenuMainActivity extends AppCompatActivity {
         newIntent.addFlags(Intent.FLAG_ACTIVITY_CLEAR_TOP);
         startActivity(newIntent);
 
+    }
+
+    public void salir(View view){
+        mAuth.signOut();
+        finish();
     }
 }
