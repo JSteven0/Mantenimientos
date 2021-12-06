@@ -12,7 +12,7 @@ public class MyDBSQLiteHelper extends SQLiteOpenHelper {
 
     @Override
     public void onCreate(SQLiteDatabase db) {
-        db.execSQL("CREATE TABLE formulario(_id INTEGER PRIMARY KEY AUTOINCREMENT, nombre TEXT, apellido TEXT, codigo TEXT, estado TEXT, tipoEqu TEXT, marca TEXT, serial TEXT, probHardware TEXT, probSoftware TEXT, especificacion TEXT, soluciónProb TEXT)");
+        db.execSQL("CREATE TABLE formulario(_id INTEGER PRIMARY KEY AUTOINCREMENT, nombre TEXT, apellido TEXT, codigo TEXT, estado TEXT, tipoEqu TEXT, marca TEXT, serial TEXT, probHardware TEXT, probSoftware TEXT, especificacion TEXT, solucionProb TEXT, imagen BLOB)");
         db.execSQL("CREATE TABLE perfil(_id INTEGER PRIMARY KEY AUTOINCREMENT, dni TEXT, nombre TEXT, apellido TEXT, genero TEXT, fecna TEXT, cargo TEXT)");
     }
 
@@ -20,7 +20,7 @@ public class MyDBSQLiteHelper extends SQLiteOpenHelper {
     public void onUpgrade(SQLiteDatabase db, int oldVersion, int newVersion) {
         db.execSQL("DROP TABLE IF EXISTS formulario");
         db.execSQL("DROP TABLE IF EXISTS perfil");
-        db.execSQL("CREATE TABLE formulario(_id INTEGER PRIMARY KEY AUTOINCREMENT, nombre TEXT, apellido TEXT, codigo TEXT, estado TEXT, tipoEqu TEXT, marca TEXT, serial TEXT, probHardware TEXT, probSoftware TEXT, especificacion TEXT, soluciónProb TEXT)");
+        db.execSQL("CREATE TABLE formulario(_id INTEGER PRIMARY KEY AUTOINCREMENT, nombre TEXT, apellido TEXT, codigo TEXT, estado TEXT, tipoEqu TEXT, marca TEXT, serial TEXT, probHardware TEXT, probSoftware TEXT, especificacion TEXT, solucionProb TEXT, imagen BLOB)");
         db.execSQL("CREATE TABLE perfil(_id INTEGER PRIMARY KEY AUTOINCREMENT, dni TEXT, nombre TEXT, apellido TEXT, genero TEXT, fecna TEXT, cargo TEXT)");
     }
 }

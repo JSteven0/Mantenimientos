@@ -66,6 +66,7 @@ public class Login extends AppCompatActivity {
                         finish();
                     }else {
                         Log.w("TAG","Error:", task.getException());
+                        Toast.makeText(Login.this, "Error"+task.getException(), Toast.LENGTH_SHORT).show();
                     }
                 }
             });
